@@ -1,0 +1,51 @@
+﻿@model WebApplication1.Models.Borrower_Details
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_Admin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Borrower_Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Borrower_From)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Borrower_From)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Borrower_To)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Borrower_To)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book.Book_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book.Book_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff.First_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Borrower_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
