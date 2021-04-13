@@ -36,6 +36,7 @@ namespace WebApplication1.Controllers
         }
 
         // GET: Authors/Create
+        //get: new values
         public ActionResult Create()
         {
             return View();
